@@ -1,5 +1,7 @@
 import math
-f1, f2 = open('file1.txt', 'r'), open('file2.txt','r')
+import sys
+f1 = open(sys.argv[1], 'r')
+f2 = open(sys.argv[2], 'r')
 px, py = map(int, f1.readline().split())
 r = int(f1.readline())
 while f2:
